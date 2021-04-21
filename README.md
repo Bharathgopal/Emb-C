@@ -12,4 +12,4 @@
 
 |Build|Cppcheck|Codacy|
 |:--:|:--:|:--:|
-|[![Build-Linux](https://github.com/Bharathgopal/Emb-C/actions/workflows/Compile-Linux.yml/badge.svg)](https://github.com/Bharathgopal/Emb-C/actions/workflows/Compile-Linux.yml)|[![Cppcheck](https://github.com/Bharathgopal/Emb-C/actions/workflows/Cppcheck.yml/badge.svg)](https://github.com/Bharathgopal/Emb-C/actions/workflows/Cppcheck.yml)|
+|[![Compile-Linux](https://github.com/Bharathgopal/Emb-C/actions/workflows/Compile.yml/badge.svg)](https://github.com/Bharathgopal/Emb-C/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/Bharathgopal/Emb-C/actions/workflows/CodeQulaity.yml/badge.svg)](https://github.com/Bharathgopal/Emb-C/actions/workflows/CodeQulaity.yml)||
