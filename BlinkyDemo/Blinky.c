@@ -15,7 +15,7 @@ void delay_ms(unsigned int delaytime)
 	int i = 0;
 	for (i = 0; i <= delaytime; i++)
 	{
-		_delay_ms(1);
+		_delay_ms(5);// delay of 5 ms
 	}
 }
 
