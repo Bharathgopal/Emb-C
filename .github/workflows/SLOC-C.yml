@@ -15,3 +15,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Lines of Code Badge
       uses: shadowmoose/GHA-LoC-Badge@1.0.0
+      id: badge
+      with:
+        debug: true
+        directory: .
+        badge: ./output/badge.svg
+        patterns: '*.md'  # Patterns in the format of a '.gitignore' file, separated by pipes.
+        ignore: '.gitignore'
