@@ -1,0 +1,17 @@
+name: Lines of Code
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Lines of Code Badge
+      uses: shadowmoose/GHA-LoC-Badge@1.0.0
