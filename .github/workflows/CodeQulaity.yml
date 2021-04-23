@@ -16,4 +16,4 @@ jobs:
     - name: get_cppcheck
       run: sudo apt-get install cppcheck
     - name: Code Quality
-      run: make -C BlinkyDemo analysis
+      run: make analysis

@@ -50,4 +50,5 @@ doc:
 clean:
 # Remove all the build files 
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+	make -C documentation clean
 	rmdir $(BUILD_DIR)

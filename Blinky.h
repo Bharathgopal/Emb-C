@@ -1,3 +1,5 @@
+#ifndef __BLINKY_H_
+#define __BLINKY_H_
 /**
  * @file Blinky.h
  * @author Bharath.G ()
@@ -12,7 +14,7 @@
 /**
  * Macro Definitions
  */
-#define F_CPU 16000000UL 	/**< to Define the Clock Frequency as 16 MHz */
+#define F_CPU 16000000UL 	/**< Define the Clock Frequency as 16 MHz */
 #define HIGH 	(1)			/**< GPIO state HIGH */
 #define LOW 	(0)			/**< GPIO state LOW */
 
@@ -47,3 +49,5 @@ void set_gpio_state(uint8_t port, uint8_t pin, uint8_t state);
  * @param delaytime in micro seconds
  */
 void delay_ms(unsigned int delaytime);
+
+#endif /** __BLINKY_H_ */
