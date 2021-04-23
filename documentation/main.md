@@ -1,1 +1,1 @@
-@mainpage Blinky Example by Bharath G @subpage Blinky.h
+@mainpage Blinky Example by Bharath G @subpage project_main.c

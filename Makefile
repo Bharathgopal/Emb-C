@@ -2,10 +2,12 @@ PROJ_NAME = Blinky
 
 BUILD_DIR = Build
 
-SRC = Blinky.c
+# All Source code files
+SRC = project_main.c\
+src/user_utils.c
 
-#Enale below varibel to add include files
-#INC = -Iinc
+# All header file paths
+INC = -I inc
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
@@ -31,24 +33,26 @@ else #All configurations for Linux OS
 endif
 
 # Command to make to consider these names as targets and not as file names in folder
-.PHONY:all analysis Build clean doc
+.PHONY:all analysis clean doc
 
 all:$(BUILD_DIR)
 	# Compile the code and generate the ELF file
-	$(CC) -g -Wall -Os -mmcu=atmega328 -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) $(SRC)
+	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
 $(BUILD_DIR):
 	# Create directory to store the built files
 	mkdir $(BUILD_DIR)
 
 analysis: $(SRC)
+	#Analyse the code using Cppcheck command line utility
 	cppcheck --enable=all $^
 
 doc:
+	#Build the code code documentation using Doxygen command line utility
 	make -C documentation
 
 clean:
-# Remove all the build files 
+	# Remove all the build files and generated document files
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
 	rmdir $(BUILD_DIR)
