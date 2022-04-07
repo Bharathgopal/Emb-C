@@ -1,6 +1,6 @@
 # Project
 * Naming Convention "M2_YourProjectGoal"
-* Folder Structure must be similar to [template](https://github.com/stepin654321/MiniProject_Template)
+* Folder Structure must be similar to [template](https://github.com/stepin654321/MiniProject_Template/tree/master/MiniProject_C)
   * 1_Requirements
   * 2_Architecture
   * 3_Implementation
