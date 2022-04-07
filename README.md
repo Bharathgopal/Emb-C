@@ -1,3 +1,23 @@
+# Project 
+* Folder Structure must be similar to [template](https://github.com/stepin654321/MiniProject_Template)
+  * 1_Requirements
+  * 2_Architecture
+  * 3_Implementation
+    * src
+    * inc
+    * simulation
+    * documentation
+    * Makefile
+  * 4_TestPlanAndOutput
+  * 5_Report
+  * 6_ImagesAndVideos
+## Project must have below components
+* Atmega328 based Embedded C Programming with below Peripherals 
+  * GPIO (Digital input or Output) and Interrupt
+  * ADC based sensor
+  * One Communication Interface (UART or SPI or I2C)
+  * Any other peripherals used (Timers, PWM etc.)
+
 # Embedded C Programming Examples with Continuous Integration and Code Quality
 
 # LED Blinking 
