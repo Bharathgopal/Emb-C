@@ -1,4 +1,5 @@
-# Project 
+# Project
+* Naming Convention "M2_YourProjectGoal"
 * Folder Structure must be similar to [template](https://github.com/stepin654321/MiniProject_Template)
   * 1_Requirements
   * 2_Architecture
